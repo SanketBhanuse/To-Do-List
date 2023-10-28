@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Roboto&display=swap');
+
+:root{
+    --primary-background-color: hsl(222, 14%, 10%);
+    --secondary-background-color: #20232a;
+    --third-background-color: #f7f7f7;
+    --heading-text-color: #61dafb;
+    --primary-font-color: #fff;
+    --secondary-font-color: #000;
+
+}
+ body{
+    background-color:var(--primary-background-color);
+    /* color:#fff */
+    /* width: 100%; */
+}
+#header {
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    background-color:var(--secondary-background-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px rgba(97,218,251,0.53);
+    position: sticky;
+    top: 2px;
+}
+
+#header  .heading{
+    color: var(--heading-text-color);
+    font-size: 48px;
+    font-weight: 800;
+    font-family: 'Cherry Bomb One', cursive;
+}
+#add_todo .heading, #todos_wrpper .heading{
+    color: var(--heading-text-color);
+    font-size: 28px;
+    font-weight: 800;
+    font-family: 'Cherry Bomb One', cursive;
+    margin-bottom: 10px;
+}
+#header  .description {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-font-color);
+}
+
+#todos_wrpper, #add_todo{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#todos_wrpper .wrap_items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#todo_item .todo_item_container{
+        background-color: var(--third-background-color);
+        padding: 10px;
+        border-radius: 10px;
+}
+#todo_item .todo_item_container .task{ 
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    font-weight: 800;
+}
+
+#todo_item .todo_item_container .del_btn{
+    background-color: var( --secondary-background-color);
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 5px 0px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+#todo_item .todo_item_container .del_btn:hover{
+    background-color: red;
+     
+}
+#todo_item .todo_item_container .tadk_description{
+    font-size: 16px;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+}
+
+.no_data_container img{
+    width: 100%;
+    height: auto;
+}
+
+.no_data_container .img_wrapper{
+    width: 200px;
+    margin: 0 auto;
+}
+#add_todo .label{ 
+    display: block;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize; 
+    color: #fff;
+    margin: 10px 0px;
+}
+#add_todo .task_imput{
+    width: 100%; 
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+#add_todo .discription_imput{
+    resize: none;
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+#add_todo .sumbit_btn{
+    background-color: #17e76e;
+    color: #000;
+    font-size: 16px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 5px 0px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+#add_todo .sumbit_btn:hover{
+    background-color: var(--heading-text-color);
+  
+}
+
+#add_todo .input:focus{
+    border: none;
+    box-shadow: 0px 0px 10px 5px rgb(0 175 223 / 53%);
+}
