@@ -31,7 +31,7 @@ function Tabs() {
       {
         json && json?.map((item, index) => {
             return (
-                <button key={index} style={tab===item.id ? {backgroundColor:"red"} : {}} onClick={()=>setTab(item.id)}>
+                <button key={index} style={tab===item.id ? {fontWeight:"red"} : {}} onClick={()=>setTab(item.id)}>
                     {item.title}
                 </button>
             )
